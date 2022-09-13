@@ -1,6 +1,6 @@
 library 'pipeline-library'
 pipeline {
-  agent none
+  agent any
   options { 
     buildDiscarder(logRotator(numToKeepStr: '2'))
     preserveStashes(buildCount: 2)    
